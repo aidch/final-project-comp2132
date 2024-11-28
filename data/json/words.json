@@ -1,0 +1,50 @@
+[
+    {
+        "word": "Canada",
+        "hint": "A country in North America"
+    },
+    {
+        "word": "Gretzky",
+        "hint": "A great Canadian former hockey player"
+    },
+    {
+        "word": "object",
+        "hint": "An instance of a class in OOP"
+    }, 
+    {
+        "word": "BCIT",
+        "hint": "A post-secondary institution in British Columbia"
+    },
+    {
+        "word": "Function",
+        "hint": "A block of code that performs a task in programming"
+    },
+    {
+        "word": "boolean",
+        "hint": "A data type that can have one of two values - true or false."
+    },
+    {
+        "word": "Maple",
+        "hint": "A type of tree known for its syrup and leaf on Canada's flag"
+    },
+    {
+        "word": "Loonie",
+        "hint": "A Canadian one-dollar coin, named after a bird"
+    },
+    {
+        "word": "Hockey",
+        "hint": "A popular winter sport in Canada"
+    },
+    {
+        "word": "Quebec",
+        "hint": "A province in Canada known for its French-speaking population"
+    },
+    {
+        "word": "Poutine",
+        "hint": "A Canadian dish consisting of fries, cheese curds, and gravy"
+    },
+    {
+        "word": "Ottawa",
+        "hint": "The capital city of Canada"
+    }
+]

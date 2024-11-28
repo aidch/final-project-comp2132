@@ -1,0 +1,166 @@
+/*
+Author: Aidai Chokmorova
+Date:   Nov 27, 2024
+*/
+
+$primary-color: #007acc;
+$hover-color: #0056b3;
+$disabled-color: #d3d3d3;
+$text-color: white;
+$font-main: Arial, sans-serif;
+$font-alt: 'Raleway', sans-serif;
+
+@mixin fade-out {
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $font-main;
+  background-color: #f9f9f9;
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  background-color: $primary-color;
+  color: $text-color;
+  padding: 20px;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.game-container {
+  margin-top: 20px;
+}
+
+#hangman-image {
+  text-align: center;
+}
+
+#hangman-image img {
+  width: 50%;
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+#attempts {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 20px;
+  color: $primary-color;
+  font-weight: bold;
+}
+
+#word-container {
+  margin: 10px 0;
+}
+
+#word {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+#hint {
+  font-style: italic;
+  color: #555;
+}
+
+#game-status-message {
+  color: red;
+  font-weight: bold;
+
+  &.fade-in {
+    animation: fadeIn 1s;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+
+  .keyboard-row {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .key {
+    background-color: $primary-color;
+    color: $text-color;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-family: $font-alt;
+    cursor: pointer;
+    transition: background-color 0.2s ease, opacity 0.5s ease;
+
+    &:hover {
+      background-color: $hover-color;
+    }
+
+    &:disabled {
+      background-color: $disabled-color;
+      color: #555;
+      cursor: not-allowed;
+      @include fade-out;
+    }
+  }
+
+  .keyboard-row:last-child {
+    margin-left: 30px; // Offset bottom row for keyboard feel
+  }
+}
+
+#new-game-btn {
+  background-color: $primary-color;
+  color: $text-color;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+footer {
+  background-color: $primary-color;
+  color: $text-color;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 1em;
+  position: relative;
+  width: 100%;
+}
+
+
+
